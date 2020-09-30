@@ -1,10 +1,9 @@
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://sun9-8.userapi.com/HmFe5muitXu6pN3TquPzHvf3n706oDY9VmiKXA/Kol_gQTTZKA.jpg" alt="First slide">
-    </div>
-  </div>
-</div>
+<mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+  <!--First slide-->
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://vk.com/doc204875235_569974157?hash=498c4059280259951f&dl=d883216952c1117d19&wnd=1&module=im">
+  </mdb-carousel-item>
+</mdb-carousel>
 
 
 <div class="jumbotron" style="background-color: #ffffff; text-align: center">
@@ -13,27 +12,25 @@
   <p class="lead">Deciding what to read next?</p>
   <p>You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</p>
   <p class="lead">
+    <button type="button" mdbBtn color="white" class="waves-light"
+            mdbPopover="You are on the right track"
+            placement="bottom"
+            mdbPopoverHeader="keke" mdbWavesEffect>
+      Press me
+    </button>
+
   <hr class="my-4">
 </div>
 
+<mdb-carousel [animation]="'slide'">
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://sun9-33.userapi.com/7WLlI5SPACIltdVOhIIjBzH0ZfIzktIGHk59Cg/fQWRlHhg5KQ.jpg" alt="First slide">
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://sun9-13.userapi.com/eyJ7Rl-S5DMuGYAlGWvsswhuKuu0bokz1TxugQ/KswGgN_E0Zk.jpg" alt="Second slide">
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://sun9-71.userapi.com/IHrRT9ADPIQZAJFx_O0BMIWvEbWYoF5gTRni4w/9zeg6JkloE8.jpg" alt="Third slide">
+  </mdb-carousel-item>
+</mdb-carousel>
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="https://sun9-7.userapi.com/2JuzsMKsKAyu2LbmM8r4qVfNaiI5CXBFx6BjnA/RB4hXInM5LM.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Third slide">
-      </div>
-    </div>
-  </div>
-<hr class="my-4">
-
-<app-checkbox></app-checkbox>
-
-<hr class="my-4">
-
-<app-card></app-card>

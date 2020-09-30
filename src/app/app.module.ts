@@ -1,27 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {CarouselModule, MDBBootstrapModule, WavesModule} from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RatingsComponent } from './ratings/ratings.component';
-import { BooksComponent } from './books/books.component';
+import { HeaderComponent } from './header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NewsComponent } from './news/news.component';
-import {CheckboxComponent} from './checkbox/checkbox.component';
-import {CardComponent} from '../cards/card.component';
-
+import { BooksComponent } from './books/books.component';
+import { RatingsComponent } from './ratings/ratings.component';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RatingsComponent,
-    BooksComponent,
+    HeaderComponent,
     NewsComponent,
-    CardComponent,
-    CheckboxComponent
+    BooksComponent,
+    RatingsComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    CarouselModule,
+    MDBBootstrapModule.forRoot(),
+    WavesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,8 @@ import { NewsComponent } from './news/news.component';
 import { BooksComponent } from './books/books.component';
 import { RatingsComponent } from './ratings/ratings.component';
 import { CardsComponent } from './cards/cards.component';
+import { FooterComponent } from './footer/footer.component';
+import { Cards2Component } from './cards2/cards2.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CardsComponent } from './cards/cards.component';
     NewsComponent,
     BooksComponent,
     RatingsComponent,
-    CardsComponent
+    CardsComponent,
+    FooterComponent,
+    Cards2Component
   ],
   imports: [
     BrowserModule,

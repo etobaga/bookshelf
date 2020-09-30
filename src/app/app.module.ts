@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { RatingsComponent } from './ratings/ratings.component';
 import { BooksComponent } from './books/books.component';
 import { NewsComponent } from './news/news.component';
+import {CheckboxComponent} from './checkbox/checkbox.component';
+import {CardComponent} from '../cards/card.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { NewsComponent } from './news/news.component';
     RatingsComponent,
     BooksComponent,
     NewsComponent,
+    CardComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,

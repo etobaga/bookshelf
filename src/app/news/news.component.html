@@ -1,5 +1,4 @@
 <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
-  <!--First slide-->
   <mdb-carousel-item>
     <img class="d-block w-100" src="https://vk.com/doc204875235_569974157?hash=498c4059280259951f&dl=d883216952c1117d19&wnd=1&module=im">
   </mdb-carousel-item>
@@ -13,7 +12,8 @@
 
   <hr class="my-4">
   <p>The site was born in {{ birthday | date:format }}</p>
-  <button (click)="toggleFormat()" type="button" mdbBtn color="white" class="waves-light">change</button>
+  <button (click)="toggleFormat(); buttonClicked()" type="button" mdbBtn color="white" class="waves-light" >change</button>
+  <p> Button Clicked {{count}} Times </p>
   <hr class="my-4">
 
 </div>
@@ -30,3 +30,10 @@
   </mdb-carousel-item>
 </mdb-carousel>
 
+<app-cards></app-cards>
+<button class="m-button" (click)="toggle1()" style="width: 70%; margin-left: 15%" >
+  <a class="text-enter" style="color: black">. . .</a>
+
+</button>
+<app-cards2 *ngIf="displayChild"
+></app-cards2>

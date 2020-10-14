@@ -1,13 +1,6 @@
 <app-header></app-header>
-<app-news></app-news>
-<app-cards></app-cards>
-<button class="m-button" (click)="toggle()" >
-  <a class="text-enter" style="color: black">. . .</a>
 
-</button>
-<app-cards2 *ngIf="displayChild"
-></app-cards2>
-
+<router-outlet></router-outlet>
 
 <app-footer></app-footer>
-<router-outlet></router-outlet>
+

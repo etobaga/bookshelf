@@ -14,6 +14,13 @@ export class NewsComponent implements OnInit {
   get format()   { return this.toggle ? 'shortDate' : 'fullDate'; }
   toggleFormat() { this.toggle = !this.toggle; }
 
+  displayChild: boolean = false;
+  toggle1() { this.displayChild = ! this.displayChild; }
+
+  count: number=0;
+  buttonClicked() : void {
+    this.count=this.count+1
+  }
 
   ngOnInit(): void {
   }

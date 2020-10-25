@@ -12,6 +12,7 @@ import { RatingsComponent } from './ratings/ratings.component';
 import { CardsComponent } from './cards/cards.component';
 import { FooterComponent } from './footer/footer.component';
 import { Cards2Component } from './cards2/cards2.component';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
     NgbModule,
     CarouselModule,
     MDBBootstrapModule.forRoot(),
-    WavesModule
+    WavesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,12 @@
-<p>books works!</p>
+<div class="panel" style="margin: 30px 600px 10px">
+    <div class="md-form active-cyan active-cyan-2 mb-3">
+      <input  [(ngModel)]="name" class="form-control" type="text" placeholder="Books Name" aria-label="Search">
+
+    <button (click)="addItem(name)" type="button" mdbBtn color="white" class="waves-light">add</button>
+  </div>
+  <table>
+    <tr *ngFor="let item of items">
+      <td>{{item}}</td>
+    </tr>
+  </table>
+</div>

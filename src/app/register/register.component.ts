@@ -15,6 +15,7 @@ export class RegisterComponent implements ComponentCanDeactivate {
     lastname: '',
     email: '',
     password: '',
+    city: '',
     passwordConfirmation: '',
   };
   saved = false;

@@ -25,7 +25,7 @@
               <div class="form-row">
                 <div class="col form-group">
                   <label>First name </label>
-                  <input id="firstName" type="text" name="firstname" placeholder="First Name" [(ngModel)]= "login.firstname" class="form-control bg-white border-left-0 border-md" #firstname = "ngModel"  required>
+                  <input id="firstName" type="text" name="firstname" placeholder="First Name" [(ngModel)]= "userDetails.firstname" class="form-control bg-white border-left-0 border-md" #firstname = "ngModel"  required>
                   <div *ngIf="firstname.invalid && (firstname.dirty || firstname.touched)"
                        class="alert alert-danger">
                     <div *ngIf="firstname.errors.required">
@@ -37,7 +37,7 @@
 
                 <div class="col form-group">
                   <label>Last name</label>
-                  <input id="lastName" type="text" name="lastname" placeholder="Last Name" [(ngModel)]= "login.lastname" class="form-control bg-white border-left-0 border-md" #lastname = "ngModel"  required>
+                  <input id="lastName" type="text" name="lastname" placeholder="Last Name" [(ngModel)]= "userDetails.lastname" class="form-control bg-white border-left-0 border-md" #lastname = "ngModel"  required>
                   <div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)"
                        class="alert alert-danger">
                     <div *ngIf="lastname.errors.required">
@@ -50,7 +50,7 @@
 
               <div class="form-group">
                 <label>Email address</label>
-                <input id="email" type="email" name="email" placeholder="Email Address" [(ngModel)]= "login.email" class="form-control bg-white border-left-0 border-md" #email = "ngModel"  required>
+                <input id="email" type="email" name="email" placeholder="Email Address" [(ngModel)]= "userDetails.email" class="form-control bg-white border-left-0 border-md" #email = "ngModel"  required>
                 <div *ngIf="email.invalid && (email.dirty || email.touched)"
                      class="alert alert-danger">
                   <div *ngIf="email.errors.required">
@@ -76,7 +76,7 @@
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label>City</label>
-                  <input id="city" type="text" name="city" placeholder="City" [(ngModel)]= "login.city" class="form-control bg-white border-left-0 border-md" #city = "ngModel"  required>
+                  <input id="city" type="text" name="city" placeholder="City" [(ngModel)]= "userDetails.city" class="form-control bg-white border-left-0 border-md" #city = "ngModel"  required>
                   <div *ngIf="city.invalid && (city.dirty || city.touched)"
                        class="alert alert-danger">
                     <div *ngIf="city.errors.required">
@@ -100,7 +100,7 @@
 
               <div class="form-group">
                 <label>Create password</label>
-                <input id="password" type="password" name="password" placeholder="Password" [(ngModel)]= "login.password" class="form-control bg-white border-left-0 border-md" #password = "ngModel"  minlength="8">
+                <input id="password" type="password" name="password" placeholder="Password" [(ngModel)]= "userDetails.password" class="form-control bg-white border-left-0 border-md" #password = "ngModel"  minlength="8">
                 <div *ngIf="password.invalid && (password.dirty || password.touched)"
                      class="alert alert-danger">
                   <div *ngIf="password.errors.minlength">
@@ -124,12 +124,12 @@
                 <div class="form-group">
                 </div>
 
-                <button type="submit" class="btn btn-dark btn-block"> Register  </button>
+                <button type="submit" class="btn btn-dark btn-block" (click)="addUser('')" [disabled]="!form.valid" block="true" > Register  </button>
               </div>
               <small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>
             </form>
           </article>
-          <div class="border-top card-body text-center">Have an account? <a href="">Log In</a></div>
+          <div class="border-top card-body text-center">Have an account? <a href="" routerLink="/log">Log In</a></div>
         </div>
       </div>
 

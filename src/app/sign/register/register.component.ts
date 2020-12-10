@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ComponentCanDeactivate} from '../../can-deactivate.guard';
 import {Observable} from 'rxjs';
 import {NgModel} from '@angular/forms';
@@ -12,7 +12,8 @@ import {Router} from '@angular/router';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements ComponentCanDeactivate {
+
+export class RegisterComponent implements ComponentCanDeactivate, OnInit {
 
   login = {
     firstname: '',
@@ -23,6 +24,16 @@ export class RegisterComponent implements ComponentCanDeactivate {
     passwordConfirmation: '',
   };
   saved = false;
+
+
+  @Input() userDetails = {id:'', firstname :'', lastname:'', email:'', password:'',city:''}
+  constructor(public userService: UserService, public _router: Router) {}
+    log()
+    {
+      this._router.navigate(["/log"]);
+    }
+
+
 
   onSubmit(){
     console.log(this.login.firstname, this.login.lastname, this.login.email, this.login.password, this.login.passwordConfirmation, this.login.city);
@@ -37,4 +48,13 @@ export class RegisterComponent implements ComponentCanDeactivate {
     return true;
   }
 
+
+
+ngOnInit(): void {
+}
+addUser(dataUser){
+  this.userService.createUser(this.userDetails).subscribe((data:{})=>{
+    this._router.navigate(['/log']);
+  })
+}
 }

@@ -22,6 +22,7 @@
       </li>
     </ul>
   </div>
-  <a class="btn btn-outline-light" routerLink="/register" style="margin-right: 10px">Sign up</a>
-  <a class="btn btn-outline-light" routerLink="/log">Log In</a>
+  <a class="btn btn-outline-light" routerLink="/register" style="margin-right: 10px" *ngIf="!username || 0 === username.length">Sign up</a>
+  <a class="btn btn-outline-light" routerLink="/log" *ngIf="!username || 0 === username.length">Log In</a>
+  <a class="btn btn-outline-light" (click)="auth.logout()" *ngIf="username !== null && username !== ''">Exit</a>
 </nav>

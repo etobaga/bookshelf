@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Zhadiger",
+      "lastname": "Bagdat",
+      "email": "etobaga@gmail.com",
+      "password": "12345678",
+      "city": "Almaty"
+    },
+    {
+      "id": 2,
+      "firstname": "Adm",
+      "lastname": "Admin",
+      "email": "admin@gmail.com",
+      "password": "12345678",
+      "city": "Almaty"
+    },
+    {
+      "id": 3,
+      "firstname": "Keke",
+      "lastname": "Kiki",
+      "email": "keke@gmail.com",
+      "password": "12345678",
+      "city": "Astana"
+    },
+    {
+      "id": 4,
+      "firstname": "q",
+      "lastname": "q",
+      "email": "q@mail.ru",
+      "password": "12345678",
+      "city": "qq"
+    }
+  ]
+}

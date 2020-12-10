@@ -13,10 +13,12 @@ import { CardsComponent } from './cards/cards.component';
 import { FooterComponent } from './footer/footer.component';
 import { Cards2Component } from './cards2/cards2.component';
 import {FormsModule} from '@angular/forms';
-import { RegisterComponent } from './register/register.component';
 import { AddComponent } from './add/add.component';
 import {CanActivateGuard} from './can-activate.guard';
-import {CanDeactivateGuard} from './can-deactivate.guard';
+import {SignModule} from './sign/sign.module';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
+
 
 
 
@@ -24,8 +26,8 @@ const appRoutes: Routes = [
   {path: '', component: NewsComponent},
   {path: 'books', component: BooksComponent},
   {path: 'ratings', component: RatingsComponent},
-  {path: 'register', component: RegisterComponent, canDeactivate: [CanDeactivateGuard]},
   {path: 'add', component: AddComponent, canActivate: [CanActivateGuard]},
+
 ];
 
 @NgModule({
@@ -38,8 +40,7 @@ const appRoutes: Routes = [
     CardsComponent,
     FooterComponent,
     Cards2Component,
-    RegisterComponent,
-    AddComponent
+    AddComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,9 +50,11 @@ const appRoutes: Routes = [
     CarouselModule,
     MDBBootstrapModule.forRoot(),
     WavesModule,
-    FormsModule
+    FormsModule,
+    SignModule,
+    HttpClientModule,
   ],
-  providers: [CanActivateGuard],
+  providers: [CanActivateGuard, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

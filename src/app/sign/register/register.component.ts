@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
-import {ComponentCanDeactivate} from '../can-deactivate.guard';
+import {ComponentCanDeactivate} from '../../can-deactivate.guard';
 import {Observable} from 'rxjs';
-import {CanDeactivateGuard} from '../can-deactivate.guard';
+import {NgModel} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {CanDeactivateGuard} from '../../can-deactivate.guard';
+import {UserService} from '../user.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-register',

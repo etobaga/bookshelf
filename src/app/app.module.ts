@@ -17,6 +17,7 @@ import { AddComponent } from './add/add.component';
 import {CanActivateGuard} from './can-activate.guard';
 import {SignModule} from './sign/sign.module';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { MapComponent } from './map/map.component';
 
 
 
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
   {path: 'books', component: BooksComponent},
   {path: 'ratings', component: RatingsComponent},
   {path: 'add', component: AddComponent, canActivate: [CanActivateGuard]},
+  {path: 'map', component: MapComponent}
 
 ];
 
@@ -41,6 +43,7 @@ const appRoutes: Routes = [
     FooterComponent,
     Cards2Component,
     AddComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,

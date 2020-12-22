@@ -56,5 +56,6 @@ addUser(dataUser){
   this.userService.createUser(this.userDetails).subscribe((data:{})=>{
     this._router.navigate(['/log']);
   })
-}
+
+  }
 }

@@ -23,14 +23,6 @@
       "email": "keke@gmail.com",
       "password": "12345678",
       "city": "Astana"
-    },
-    {
-      "id": 4,
-      "firstname": "q",
-      "lastname": "q",
-      "email": "q@mail.ru",
-      "password": "12345678",
-      "city": "qq"
     }
   ]
 }

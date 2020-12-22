@@ -23,10 +23,10 @@ export class LogComponent implements OnInit {
   login(): void {
     if (this.username != '' && this.password != '') {
       if (this._auth.login(this.username, this.password)) {
-        this._router.navigate(["/home"]);
+        this._router.navigate(['books']);
         window.location.reload();
       } else
-        alert("Wrong username or password");
+        alert("Wrong password or username");
     }
   }
 

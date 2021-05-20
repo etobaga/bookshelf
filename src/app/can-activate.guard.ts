@@ -9,7 +9,7 @@ export class CanActivateGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return confirm('Are you sure you want to go to this page to create your story?');
+    return confirm('Are you sure you want to go to this page to write your review?');
   }
 
 }

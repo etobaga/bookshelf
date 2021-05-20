@@ -1,14 +1,15 @@
+<div class="jumbotron" style="background-color: #ffffff; text-align: center">
+  <h1 class="display-4" style="font-family: 'Times New Roman'">The Best Smart Home Security Systems for 2021</h1>
+  <hr class="my-4">
+
+
 <div class="panel" style="margin: 30px 600px 10px">
     <div class="md-form active-cyan active-cyan-2 mb-3">
-      <input  [(ngModel)]="name" class="form-control" type="text" placeholder="Books Name" aria-label="Search">
+      <input  [(ngModel)]="name" class="form-control" type="text" placeholder="Search" aria-label="Search">
 
-    <button (click)="addItem(name)" type="button" mdbBtn color="white" class="waves-light">add</button>
+    <button (click)="addItem(name)" type="button" mdbBtn color="white" class="waves-light">search</button>
   </div>
-  <table>
-    <tr *ngFor="let item of items">
-      <td>{{item}}</td>
-    </tr>
-  </table>
+
 </div>
 <div class="container">
   <div class="row">
@@ -17,10 +18,10 @@
         <thead>
         <tr>
           <th scope="col">Number</th>
-          <th scope="col">Book</th>
+          <th scope="col"></th>
           <th scope="col">Description</th>
-          <th scope="col">Author</th>
-          <th scope="col">Year</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
           <th scope="col">Link to Ratings</th>
         </tr>
         </thead>
@@ -28,62 +29,61 @@
         <tr>
           <th scope="row">1</th>
           <td class="w-25">
-            <img src="https://book-assets.openroadmedia.com/9781504044486-book-cover.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+            <img src="https://i.pcmag.com/imagery/reviews/01mAICJqqkl2VBIZkAZeS4Q-7.1569479622.fit_lpad.size_238x139.jpg" class="img-fluid img-thumbnail" alt="Sheep">
           </td>
-          <td>Often referred to as the first modern European novel, Don Quixote follows the exploits of the titular noble who becomes obsessed with the romantic notion of chivalry. On a self-imposed mission to become a knight-errant, Don Quixote recruits common farmer, Sancho Panza, as his squire. Unfortunately, however, their quests rarely end well—among other misadventures, Don Quixote does battle with a herd of sheep, attacks a group of monks, and even frees a group of convicted criminals.</td>
-          <td>By Miguel de Cervantes</td>
-          <td>1605</td>
+          <td>The Vivint Smart Home system offers 24/7 security monitoring and remote control of your cameras, door locks, heating system, and more.</td>
+          <td>Vivint Smart Home</td>
+          <td>$39.99</td>
           <td><button mdbBtn type="button" color="elegant" mdbWavesEffect>go</button></td>
         </tr>
         <tr>
           <th scope="row">2</th>
           <td class="w-25">
-            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571925550l/48570454.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+            <img src="https://i.pcmag.com/imagery/reviews/00z89jGGstKuKqAZmXIFhw1-9.1569469961.fit_lpad.size_238x139.jpg" class="img-fluid img-thumbnail" alt="Sheep">
           </td>
-          <td>She turns to the hard sciences to unlock the mystery of her family's loss, she finds herself hungering for her childhood faith and grappling with the evangelical church in which she was raised, whose promise of salvation remains as tantalizing as it is elusive. Transcendent Kingdom is a deeply moving portrait of a family of Ghanaian immigrants ravaged by depression and addiction and grief--a novel about faith, science, religion, love. Exquisitely written, emotionally searing, this is an exceptionally powerful follow-up to Gyasi's phenomenal debut. </td>
-          <td>by Yaa Gyasi</td>
-          <td>2020</td>
+          <td>If you want to secure and monitor your home from afar without spending a bundle or signing a long-term contract, there's a lot to like about the versatile and easy-to-use DIY SimpliSafe Home Security System. </td>
+          <td>SimpliSafe Home Security System</td>
+          <td>$229</td>
           <td><button (click)="goto()" mdbBtn type="button" color="elegant" mdbWavesEffect>go</button></td>
         </tr>
         <tr>
           <th scope="row">3</th>
           <td class="w-25">
-            <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+            <img src="https://i.pcmag.com/imagery/reviews/04K0Qy131rQCv5TCcH9FsEJ-5.1574299206.fit_lpad.size_238x139.jpg" class="img-fluid img-thumbnail" alt="Sheep">
           </td>
-          <td>The most recent novel on this list, Harry Potter and the Sorcerer’s Stone brings readers into a world of magic at Hogwarts School of Witchcraft and Wizardry. On his eleventh birthday, Harry’s magical heritage is brought to light by the bumbling half-giant Hagrid. As he embarks on his new life as a wizard, he finds that there’s more to this news than just learning spells and potions. The Dark Lord Voldemort, who had tried and failed to kill Harry as an infant, is regaining power, and Harry stands in his path.</td>
-          <td>By J.K. Rowlingn</td>
-          <td>1997</td>
+          <td>The Abode iota is an easy-to-install all-in-one security system loaded with features including a 1080p camera, a motion sensor, multiple wireless radios, a built-in siren, and support for many third-party devices and platforms. </td>
+          <td>Abode iota All-In-One Security Kit</td>
+          <td>$299</td>
           <td><button mdbBtn type="button" color="elegant" mdbWavesEffect>go</button></td>
         </tr>
         <tr>
           <th scope="row">4</th>
           <td class="w-25">
-            <img src="https://book-assets.openroadmedia.com/9781497644984-book-cover.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+            <img src="https://i.pcmag.com/imagery/reviews/00UZTG51MQFHrtSkAVaJ1pf-1.1603131994.fit_lpad.size_238x139.png" class="img-fluid img-thumbnail" alt="Sheep">
           </td>
-          <td>In this quintessential novel, seven-year-old Alice stumbles down a rabbit hole into a fantastical world of wonder and trouble. While navigating this new and peculiar place, Alice encounters many enchanting anthropomorphic creatures, like the iconic White Rabbit and the Cheshire Cat. Carrol’s work twists logic and spins riddles, giddily tossing convention aside. Now one of the cornerstones of the fantasy genre, Alice’s Adventures in Wonderland holds a dear place in the hearts of both children and adults. </td>
-          <td>By Lewis Carroll</td>
-          <td>1865</td>
+          <td>Blue by ADT is a reasonably priced DIY home security system that's easy to install, works with lots of third-party devices, and supports Alexa and Google voice commands.</td>
+          <td>Blue by ADT Home Security System</td>
+          <td>$219.95</td>
           <td><button mdbBtn type="button" color="elegant" mdbWavesEffect>go</button></td>
         </tr>
         <tr>
           <th scope="row">5</th>
           <td class="w-25">
-            <img src="https://book-assets.openroadmedia.com/9781497679276-book-cover.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+            <img src="https://i.pcmag.com/imagery/reviews/04ipbAtg2SH7R3pbcCHf1xl-19.1617031441.fit_lpad.size_238x139.jpg" class="img-fluid img-thumbnail" alt="Sheep">
           </td>
-          <td>This tale follows a marionette boy, Pinocchio, crafted out of a talking log by the poor woodcarver, Gepetto. Ill-behaved Pinocchio is peculiar, with a nose that grows with every lie told. As the puppet boy travels out into the world, he finds that it holds more trouble and treachery than even he can handle.
-            Since this novel was published in 1883, it has become one of the most commonly adapted stories worldwide. This tale about a puppet who wants nothing more than to be a real boy encompasses a heartfelt theme about personal growth and humanity.</td>
-          <td>By Carlo Collodi</td>
-          <td>1883</td>
+          <td>The Ring Alarm Security Kit home security system that is easy to install to install on your own, offers affordable professional monitoring, and interacts with other Ring devices and dozens of smart locks and switches.</td>
+          <td>Ring Alarm Security Kit</td>
+          <td>$159.99</td>
           <td><button mdbBtn type="button" color="elegant" mdbWavesEffect>go</button></td>
         </tr>
         <tr>
           <th scope="row">6</th>
           <td class="w-25">
-            <img src="https://prodimage.images-bn.com/pimages/9780064471046_p0_v3_s1200x630.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+            <img src="https://i.pcmag.com/imagery/reviews/07hCqC8nEjeb1eBE89aWCIS-9.1569481742.fit_lpad.size_238x139.jpg" alt="Sheep">
           </td>
-          <td>As the first of seven novels in the series The Chronicles of Narnia, this book brings to life the fantastical world of Narnia, a place full of talking animals and magic. The story unfolds when the four Pevensie children are evacuated from England during wartime to stay in the old house of a kind professor. When the youngest child, Lucy, enters a wardrobe to find a vast, snow-filled land, she and her siblings are dragged into a battle of good and evil. </td>
-          <td>By C.S. Lewis</td>
-          <td>1950</td>
+          <td>The Cove is a DIY smart home security system that comes with a spacious 7-inch touch-screen control panel and offers reasonably priced components and very fast response times.</td>
+          <td>Cove Home Security System</td>
+          <td>$369.99</td>
           <td><button mdbBtn type="button" color="elegant" mdbWavesEffect >go</button></td>
         </tr>
         </tbody>
